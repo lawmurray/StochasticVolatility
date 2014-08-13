@@ -15,10 +15,10 @@ model StochasticVolatility {
   }
 
   sub proposal_parameter {
-    phi_v ~ truncated_normal(phi_v, 0.01, 0.0, 1.0);
-    sigma_v ~ truncated_normal(sigma_v, 0.04, 0.0, 1.0);
-    mu_y ~ truncated_normal(mu_y, 0.001, -0.1, 0.1);
-    sigma_y ~ truncated_normal(sigma_y, 0.001, 0.0, 1.0);
+    phi_v ~ truncated_normal(phi_v, 0.003, 0.0, 1.0);
+    sigma_v ~ truncated_normal(sigma_v, 0.02, 0.0, 1.0);
+    mu_y ~ truncated_normal(mu_y, 0.00025, -0.1, 0.1);
+    sigma_y ~ truncated_normal(sigma_y, 0.007, 0.0, 1.0);
   }
 
   sub initial {
